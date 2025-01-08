@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:gerard/ui/theme.dart';
-import 'package:gerard/ui/view_all/view_all.dart';
+
+import 'core/di/di.dart';
+import 'core/router/router_config.dart';
 
 void main() {
+
+  configureDependencies();
   runApp(const MyApp());
 }
 
@@ -12,13 +16,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    final appRouterConfig = getIt<AppRouterConfig>();
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'Gerard coach sportif',
       theme: theme,
-      home: const ViewAll(),
+      routerConfig: appRouterConfig.router,
     );
   }
 }
-
-

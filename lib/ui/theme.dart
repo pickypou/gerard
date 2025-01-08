@@ -27,7 +27,7 @@ TextStyle titleStyle(BuildContext context) {
   double titlefont = size.width / 11;
   return TextStyle(
     fontSize: titlefont,
-    color: theme.colorScheme.secondary,
+    color: theme.colorScheme.primary,
     fontFamily: "Roboto", // Utilise la police Amable
     decoration: TextDecoration.none,
   );
@@ -40,7 +40,7 @@ TextStyle titleStyleLarge(BuildContext context) {
   return TextStyle(
     fontSize: titleFontSize,
     fontWeight: FontWeight.bold,
-    color: Theme.of(context).colorScheme.secondary,
+    color: Theme.of(context).colorScheme.primary,
     fontFamily: "Autography",
     decoration: TextDecoration.none,
   );
@@ -54,7 +54,7 @@ TextStyle titleStyleMedium(BuildContext context) {
   return TextStyle(
     fontSize: titleFontSize,
     fontWeight: FontWeight.w400,
-    color: Theme.of(context).colorScheme.secondary,
+    color: Theme.of(context).colorScheme.primary,
     fontFamily: "Autography", // Police Amable pour les grands titres
     decoration: TextDecoration.none,
   );
@@ -66,30 +66,41 @@ TextStyle titleStyleSmall(BuildContext context) {
   return TextStyle(
     fontSize: titleFontSize,
     fontWeight: FontWeight.w400,
-    color: Theme.of(context).colorScheme.secondary,
+    color: Theme.of(context).colorScheme.primary,
     fontFamily: "Autography", // Police Amable pour les grands titres
     decoration: TextDecoration.none,
   );
 }
 
-// Style pour le texte avec la police Autography
-TextStyle textStyleText(BuildContext context) {
+
+TextStyle textStyleTextMobile(BuildContext context) {
+  Size size = MediaQuery.sizeOf(context);
+  double textFontSize = size.width / 25;
+  return
+    GoogleFonts.montserrat().copyWith(
+      fontSize: textFontSize,
+      color: Theme.of(context).colorScheme.onPrimary,
+      decoration: TextDecoration.none,
+    );
+}
+
+TextStyle textStyleTextWeb(BuildContext context) {
   Size size = MediaQuery.sizeOf(context);
   double textFontSize = size.width / 75;
   return
     GoogleFonts.montserrat().copyWith(
       fontSize: textFontSize,
-      color: Theme.of(context).colorScheme.secondary,
+      color: Theme.of(context).colorScheme.onPrimary,
       decoration: TextDecoration.none,
     );
 }
 
 TextStyle textStyleTextAccueil(BuildContext context) {
   Size size = MediaQuery.sizeOf(context);
-  double textFontSize = size.width / 55;
+  double textFontSize = size.width / 20;
   return  GoogleFonts.montserrat().copyWith(
     fontSize: textFontSize,
-    color: Theme.of(context).colorScheme.secondary,
+    color: Theme.of(context).colorScheme.primary,
     decoration: TextDecoration.none,
   );
 }
@@ -100,7 +111,7 @@ TextStyle textStyleTextBulle(BuildContext context) {
   return
     GoogleFonts.montserrat().copyWith(
       fontSize: textFontSize,
-      color: Theme.of(context).colorScheme.secondary,
+      color: Theme.of(context).colorScheme.onPrimary,
       decoration: TextDecoration.none,
     );
 }
