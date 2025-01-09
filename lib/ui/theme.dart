@@ -105,13 +105,13 @@ TextStyle textStyleTextAccueil(BuildContext context) {
   );
 }
 
-TextStyle textStyleTextBulle(BuildContext context) {
+TextStyle textStyleTextAppBar(BuildContext context) {
   Size size = MediaQuery.sizeOf(context);
   double textFontSize = size.width / 88;
   return
     GoogleFonts.montserrat().copyWith(
       fontSize: textFontSize,
-      color: Theme.of(context).colorScheme.onPrimary,
+      color: Theme.of(context).colorScheme.secondary,
       decoration: TextDecoration.none,
     );
 }

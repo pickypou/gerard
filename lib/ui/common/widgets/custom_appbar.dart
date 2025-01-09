@@ -65,12 +65,26 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           onTap: () {
             GoRouter.of(context).go('/');
           },
-          child: const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16.0),
+          child:  Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
             child: Center(
               child: Text(
-                '',
-                style: TextStyle(fontSize: 16.0, color: Colors.white),
+                'Accueil',
+                style: textStyleTextAppBar(context),
+              ),
+            ),
+          ),
+        ),
+        GestureDetector(
+          onTap: () {
+            GoRouter.of(context).go('/gym_douce');
+          },
+          child:  Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            child: Center(
+              child: Text(
+                'Gym douce',
+                style: textStyleTextAppBar(context),
               ),
             ),
           ),
@@ -88,18 +102,18 @@ class CustomDrawer extends StatelessWidget {
     return Drawer(
         backgroundColor: theme.colorScheme.primary,
         elevation: 0,
-        child: ListView(padding: EdgeInsets.zero, children: [
+        child: ListView(padding: const EdgeInsets.fromLTRB(10, 25, 0, 0), children: [
           ListTile(
-            title: const Text(''),
+            title: const Text('Accueil'),
             onTap: () {
               GoRouter.of(context).go('/');
               Navigator.pop(context);
             },
           ),
           ListTile(
-            title: const Text('Accueil'),
+            title: const Text('Gym douce'),
             onTap: () {
-              GoRouter.of(context).go('/');
+              GoRouter.of(context).go('/gym_douce');
               Navigator.pop(context);
             },
           ),

@@ -18,7 +18,9 @@ class ViewAll extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Expanded(
-                child: HomePage())
+                child: HomePage(),
+
+            )
           ],
         ),
       ),
