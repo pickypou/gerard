@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gerard/core/utils/calcul_font_size.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 ThemeData theme = ThemeData(
@@ -21,25 +22,22 @@ ThemeData theme = ThemeData(
 
 
 
-// Style pour les titres avec la police Amable
+
 TextStyle titleStyle(BuildContext context) {
   Size size = MediaQuery.sizeOf(context);
   double titlefont = size.width / 11;
   return TextStyle(
     fontSize: titlefont,
     color: theme.colorScheme.primary,
-    fontFamily: "Roboto", // Utilise la police Amable
+    fontFamily: "Roboto",
     decoration: TextDecoration.none,
   );
 }
 
 TextStyle titleStyleLarge(BuildContext context) {
-  Size size = MediaQuery.of(context).size;
-  double titleFontSize = size.width / 15;
-
   return TextStyle(
-    fontSize: titleFontSize,
-    fontWeight: FontWeight.bold,
+    fontSize: calculateTitleFontSize(context),
+    fontWeight: FontWeight.w400,
     color: Theme.of(context).colorScheme.primary,
     fontFamily: "Autography",
     decoration: TextDecoration.none,
@@ -48,23 +46,18 @@ TextStyle titleStyleLarge(BuildContext context) {
 }
 
 TextStyle titleStyleMedium(BuildContext context) {
-  Size size = MediaQuery.of(context).size;
-  double titleFontSize = size.width / 27;
-
   return TextStyle(
-    fontSize: titleFontSize,
+    fontSize: calculateTitleFontSize(context),
     fontWeight: FontWeight.w400,
     color: Theme.of(context).colorScheme.primary,
-    fontFamily: "Autography", // Police Amable pour les grands titres
+    fontFamily: "Autography",
     decoration: TextDecoration.none,
   );
 }
 
 TextStyle titleStyleSmall(BuildContext context) {
-  Size size = MediaQuery.sizeOf(context);
-  double titleFontSize = size.width / 30;
   return TextStyle(
-    fontSize: titleFontSize,
+    fontSize: calculateTitleFontSize(context),
     fontWeight: FontWeight.w400,
     color: Theme.of(context).colorScheme.primary,
     fontFamily: "Autography", // Police Amable pour les grands titres
@@ -73,27 +66,16 @@ TextStyle titleStyleSmall(BuildContext context) {
 }
 
 
-TextStyle textStyleTextMobile(BuildContext context) {
-  Size size = MediaQuery.sizeOf(context);
-  double textFontSize = size.width / 25;
+TextStyle textStyleText(BuildContext context) {
   return
     GoogleFonts.montserrat().copyWith(
-      fontSize: textFontSize,
+      fontSize: calculateFontSize(context),
       color: Theme.of(context).colorScheme.onPrimary,
       decoration: TextDecoration.none,
     );
 }
 
-TextStyle textStyleTextWeb(BuildContext context) {
-  Size size = MediaQuery.sizeOf(context);
-  double textFontSize = size.width / 75;
-  return
-    GoogleFonts.montserrat().copyWith(
-      fontSize: textFontSize,
-      color: Theme.of(context).colorScheme.onPrimary,
-      decoration: TextDecoration.none,
-    );
-}
+
 
 TextStyle textStyleTextAccueil(BuildContext context) {
   Size size = MediaQuery.sizeOf(context);

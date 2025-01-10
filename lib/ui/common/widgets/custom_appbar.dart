@@ -19,7 +19,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   Size get preferredSize => Size.fromHeight(AppBar().preferredSize.height);
 
   Widget? getLeading(BuildContext context) {
-    if (MediaQuery.sizeOf(context).width > 750) {
+    if (MediaQuery.sizeOf(context).width > 749) {
       return context.canPop()
           ? IconButton(
               icon: const Icon(
@@ -61,35 +61,22 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             ),
             onPressed: onNavigate!,
           ),
-        GestureDetector(
-          onTap: () {
-            GoRouter.of(context).go('/');
-          },
-          child:  Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            child: Center(
-              child: Text(
-                'Accueil',
-                style: textStyleTextAppBar(context),
-              ),
-            ),
-          ),
-        ),
-        GestureDetector(
-          onTap: () {
-            GoRouter.of(context).go('/gym_douce');
-          },
-          child:  Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            child: Center(
-              child: Text(
-                'Gym douce',
-                style: textStyleTextAppBar(context),
-              ),
-            ),
-          ),
-        ),
+        _buildNavigationButton(context, '/', 'Accueil'),
+        _buildNavigationButton(context, '/gym_douce', 'Gym douce'),
+        _buildNavigationButton(context, '/yoga', 'Yoga'),
+        _buildNavigationButton(context, '/stretching', 'Stretching'),
       ],
+    );
+  }
+  Widget _buildNavigationButton(BuildContext context, String route, String label) {
+    return TextButton(
+      onPressed: () {
+        GoRouter.of(context).go(route);
+      },
+      child: Text(
+        label,
+        style: textStyleTextAppBar(context),
+      ),
     );
   }
 }
@@ -114,6 +101,20 @@ class CustomDrawer extends StatelessWidget {
             title: const Text('Gym douce'),
             onTap: () {
               GoRouter.of(context).go('/gym_douce');
+              Navigator.pop(context);
+            },
+          ),
+          ListTile(
+            title: const Text('Yoga'),
+            onTap: () {
+              GoRouter.of(context).go('/yoga');
+              Navigator.pop(context);
+            },
+          ),
+          ListTile(
+            title: const Text('Stretching'),
+            onTap: () {
+              GoRouter.of(context).go('/stretching');
               Navigator.pop(context);
             },
           ),

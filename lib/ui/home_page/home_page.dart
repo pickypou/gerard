@@ -46,8 +46,10 @@ class HomePage extends StatelessWidget {
                   )),
               Text(
                 "Professeur de judo, ceinture noire 6e dan, titulaire d'un BPJPS, diplômé en yoga (D.U), coach sportif a domicile, et éducatuer sport-santé certifié, je mets mes compétence à votre service pour concevoir un programme personnalisé. Que ce soit en presentiel ou à distence, je vous accompagne pour entretenir votre forme physique, améliorer votre mobilité et atteindre vos objectifs grace à des activités Regulières , Adaptées, Sécurisées et Progréssives (RASP- selon la recommandation de l'OMS).",
-                style: textStyleTextMobile(context),
+                style: textStyleText(context),
               ),
+              const SizedBox(height: 55,),
+              const Footer()
             ],
           ),
         ),
@@ -71,7 +73,7 @@ class HomePage extends StatelessWidget {
             ),
             Text(
               'Qui suis-je',
-              style: titleStyleMedium(context),
+              style: titleStyleLarge(context),
             ),
             const SizedBox(
               height: 35,
@@ -89,7 +91,7 @@ class HomePage extends StatelessWidget {
                 )),
             Text(
               "Professeur de judo, ceinture noire 6e dan, titulaire d'un BPJPS, diplômé en yoga (D.U), coach sportif a domicile, et éducatuer sport-santé certifié, je mets mes compétence à votre service pour concevoir un programme personnalisé. Que ce soit en presentiel ou à distence, je vous accompagne pour entretenir votre forme physique, améliorer votre mobilité et atteindre vos objectifs grace à des activités Regulières , Adaptées, Sécurisées et Progréssives (RASP- selon la recommandation de l'OMS).",
-              style: textStyleTextWeb(context),
+              style: textStyleText(context),
             ),
             const SizedBox(height: 55,),
             const Footer()
