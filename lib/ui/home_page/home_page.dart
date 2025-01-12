@@ -67,7 +67,7 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset("assets/images/logo_gerard.png",
-                fit: BoxFit.contain, width: size.width * 0.5),
+                fit: BoxFit.contain, width: size.width * 0.3),
             const SizedBox(
               height: 35,
             ),
@@ -78,8 +78,8 @@ class HomePage extends StatelessWidget {
             const SizedBox(
               height: 35,
             ),
-            Image.asset("assets/images/gerard_velo.png",
-            fit: BoxFit.contain, width: size.width * 0.4,),
+            Image.asset("assets/images/gerard.jpg",
+            fit: BoxFit.contain, width: size.width * 0.2,),
             const SizedBox(
               height: 25,
             ),
