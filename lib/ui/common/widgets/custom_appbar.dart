@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:gerard/ui/theme.dart';
 import 'package:go_router/go_router.dart';
 
-
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
   final List<Widget>? actions;
@@ -18,28 +17,66 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Size get preferredSize => Size.fromHeight(AppBar().preferredSize.height);
 
-  Widget? getLeading(BuildContext context) {
-    if (MediaQuery.sizeOf(context).width > 749) {
+  Widget getLeading(BuildContext context) {
+    final isWideScreen = MediaQuery.of(context).size.width > 749;
+
+    if (!isWideScreen) {
+      return Builder(
+        builder: (BuildContext context) {
+          return IconButton(
+            onPressed: () {
+              Scaffold.of(context).openDrawer();
+            },
+            icon: Icon(
+              Icons.menu,
+              color: theme.colorScheme.secondary,
+            ),
+          );
+        },
+      );
+    } else {
       return context.canPop()
           ? IconButton(
-              icon: const Icon(
-                Icons.arrow_back,
-                color: Colors.white,
-              ),
+              icon:  Icon(Icons.arrow_back, color:theme.colorScheme.secondary),
               onPressed: () => context.pop(),
             )
-          : null;
-    } else {
-      return IconButton(
-          onPressed: () {
-            Scaffold.of(context).openDrawer();
-          },
-          icon: const Icon(Icons.menu));
+          : Container(); // Retourne un widget vide si on ne peut pas revenir en arrière
     }
+  }
+
+  List<Widget> generateNavActions(BuildContext context) {
+    final List<Map<String, String>> navItems = [
+      {'label': 'Accueil', 'route': '/'},
+      {'label': 'Gym douce', 'route': '/gym_douce'},
+      {'label': 'Yoga', 'route': '/yoga'},
+      {'label': 'Stretching', 'route': '/stretching'},
+      {'label': 'Yoga parents/enfants', 'route': '/parentsEnfants'},
+      {'label': 'Taîso', 'route': '/taiso'},
+      {'label': 'Coaching individuel', 'route': '/coaching'},
+      {'label': 'Tarifs/Horaires', 'route': '/tarifsHoraires'},
+      {'label': 'Contact', 'route': '/contact'}
+    ];
+
+    return navItems.map((item) {
+      return GestureDetector(
+        onTap: () => GoRouter.of(context).go(item['route']!),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+          child: Center(
+            child: Text(
+              item['label']!,
+              style: textStyleTextAppBar(context),
+            ),
+          ),
+        ),
+      );
+    }).toList();
   }
 
   @override
   Widget build(BuildContext context) {
+    final isWideScreen = MediaQuery.of(context).size.width > 749;
+
     return AppBar(
       backgroundColor: theme.colorScheme.primary,
       title: Text(
@@ -47,7 +84,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         textAlign: TextAlign.center,
       ),
       leading: getLeading(context),
-      actions: <Widget>[
+      actions: [
         if (actions != null)
           ...actions!.map((action) => Padding(
                 padding: const EdgeInsets.only(right: 8.0),
@@ -55,28 +92,11 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               )),
         if (onNavigate != null)
           IconButton(
-            icon: const Icon(
-              Icons.new_releases,
-              color: Colors.white,
-            ),
+            icon: const Icon(Icons.new_releases, color: Colors.white),
             onPressed: onNavigate!,
           ),
-        _buildNavigationButton(context, '/', 'Accueil'),
-        _buildNavigationButton(context, '/gym_douce', 'Gym douce'),
-        _buildNavigationButton(context, '/yoga', 'Yoga'),
-        _buildNavigationButton(context, '/stretching', 'Stretching'),
+        if (isWideScreen) ...generateNavActions(context),
       ],
-    );
-  }
-  Widget _buildNavigationButton(BuildContext context, String route, String label) {
-    return TextButton(
-      onPressed: () {
-        GoRouter.of(context).go(route);
-      },
-      child: Text(
-        label,
-        style: textStyleTextAppBar(context),
-      ),
     );
   }
 }
@@ -84,40 +104,40 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
 
+  // Méthode pour générer les éléments du drawer
+  List<Widget> generateDrawerItems(BuildContext context) {
+    final List<Map<String, String>> drawerItems = [
+      {'label': 'Accueil', 'route': '/'},
+      {'label': 'Gym douce', 'route': '/gym_douce'},
+      {'label': 'Yoga', 'route': '/yoga'},
+      {'label': 'Stretching', 'route': '/stretching'},
+      {'label': 'Yoga parents/enfants', 'route': '/parentsEnfants'},
+      {'label': 'Taîso', 'route': '/taiso'},
+      {'label': 'Coaching individuel', 'route': '/coaching'},
+      {'label': 'Tarifs/Horaires', 'route': '/tarifsHoraires'},
+      {'label': 'Contact', 'route': '/contact'}
+    ];
+
+    return drawerItems.map((item) {
+      return ListTile(
+        title: Text(item['label']!),
+        onTap: () {
+          GoRouter.of(context).go(item['route']!);
+          Navigator.pop(context); // Fermer le drawer après la navigation
+        },
+      );
+    }).toList();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
-        backgroundColor: theme.colorScheme.primary,
-        elevation: 0,
-        child: ListView(padding: const EdgeInsets.fromLTRB(10, 25, 0, 0), children: [
-          ListTile(
-            title: const Text('Accueil'),
-            onTap: () {
-              GoRouter.of(context).go('/');
-              Navigator.pop(context);
-            },
-          ),
-          ListTile(
-            title: const Text('Gym douce'),
-            onTap: () {
-              GoRouter.of(context).go('/gym_douce');
-              Navigator.pop(context);
-            },
-          ),
-          ListTile(
-            title: const Text('Yoga'),
-            onTap: () {
-              GoRouter.of(context).go('/yoga');
-              Navigator.pop(context);
-            },
-          ),
-          ListTile(
-            title: const Text('Stretching'),
-            onTap: () {
-              GoRouter.of(context).go('/stretching');
-              Navigator.pop(context);
-            },
-          ),
-        ]));
+      backgroundColor: theme.colorScheme.primary,
+      elevation: 0,
+      child: ListView(
+        padding: const EdgeInsets.fromLTRB(10, 25, 0, 0),
+        children: generateDrawerItems(context),
+      ),
+    );
   }
 }

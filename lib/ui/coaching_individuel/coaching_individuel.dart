@@ -4,8 +4,8 @@ import '../common/widgets/custom_appbar.dart';
 import '../common/widgets/footer.dart';
 import '../theme.dart';
 
-class Yoga extends StatelessWidget {
-  const Yoga({super.key});
+class CoachingIndividuel extends StatelessWidget {
+  const CoachingIndividuel({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class Yoga extends StatelessWidget {
                   Align(
                       alignment: Alignment.center,
                       child: Text(
-                        "Yoga",
+                        "Coaching individuel",
                         style: titleStyleMedium(context),
                       )),
                   const SizedBox(
@@ -36,14 +36,14 @@ class Yoga extends StatelessWidget {
                     height: 35,
                   ),
                   Text(
-                    "Que ce soit du hatha yoga, du vinyasa yoga, du yoga nidra ou un yoga traditionnel thérapeutique directement inspiré de l'inde (Kaivalyadhama), chaque pratique vous invite à explorer un travail alliant mobilité, respiration et spiritualité. Ces technique vous guide sur le chemin de la connaissance de soi, dans une société ou l'on vous en demande toujours plus? Lors de mes séances de yoga, je vous propose de faire une pause, un véritable moment de reconnexion à vous-même..",
+                    "Vous souhaiter choisir librement votre activité et vos horaires ?je peux intervenir directement chez vous, vous accueillir au Cocon ou encore organiser des séances en visio. Besoin de vous remuscler ? Envie de retrouver de la mobilité après une opération ? Vous aspirze à perdre du poids ou à mieux gérer votre condition phisique ? Que vous souffriez de troubles musculo-squelettiques, d'obésité, de diabète de type 2, de trouble respiratoires ou encore de stress chronique excessif, exposez-moi votre situation. Je conçois pour vous un programme entièrement personnalisé, adapté a vos besoin et objectifs.",
                     style: textStyleText(context),
                   ),
                   const SizedBox(
                     height: 35,
                   ),
                   Text(
-                    "Les cours de Yoga ont lieu tout les lundi à 14h00 / vendredi à 19h00",
+                    "Le coaching individuel ce fait uniquement sur rendez-vous ou à domicile",
                     style: textStyleText(context),
                   ),
                   const SizedBox(
@@ -69,7 +69,7 @@ class Yoga extends StatelessWidget {
                   Align(
                       alignment: Alignment.center,
                       child: Text(
-                        "Coaching Individuel",
+                        "Coaching individuel",
                         style: titleStyleMedium(context),
                       )),
                   const SizedBox(
@@ -80,14 +80,14 @@ class Yoga extends StatelessWidget {
                     height: 35,
                   ),
                   Text(
-                    "Que ce soit du hatha yoga, du vinyasa yoga, du yoga nidra ou un yoga traditionnel thérapeutique directement inspiré de l'inde (Kaivalyadhama), chaque pratique vous invite à explorer un travail alliant mobilité, respiration et spiritualité. Ces technique vous guide sur le chemin de la connaissance de soi, dans une société ou l'on vous en demande toujours plus? Lors de mes séances de yoga, je vous propose de faire une pause, un véritable moment de reconnexion à vous-même..",
+                    "Vous souhaiter choisir librement votre activité et vos horaires ? je peux intervenir directement chez vous, vous accueillir au Cocon ou encore organiser des séances en visio. Besoin de vous remuscler ? Envie de retrouver de la mobilité après une opération ? Vous aspirze à perdre du poids ou à mieux gérer votre condition phisique ? Que vous souffriez de troubles musculo-squelettiques, d'obésité, de diabète de type 2, de trouble respiratoires ou encore de stress chronique excessif, exposez-moi votre situation. Je conçois pour vous un programme entièrement personnalisé, adapté a vos besoin et objectifs.",
                     style: textStyleText(context),
                   ),
                   const SizedBox(
                     height: 35,
                   ),
                   Text(
-                    "Les cours de Yoga ont lieu tout les lundi à 14h00 / vendredi à 19h00",
+                    "Le coaching individuel ce fait uniquement sur rendez-vous ou à domicile",
                     style: textStyleText(context),
                   ),
                   const SizedBox(

@@ -4,8 +4,9 @@ import '../common/widgets/custom_appbar.dart';
 import '../common/widgets/footer.dart';
 import '../theme.dart';
 
-class Yoga extends StatelessWidget {
-  const Yoga({super.key});
+
+class Taiso extends StatelessWidget {
+  const Taiso({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,9 +14,8 @@ class Yoga extends StatelessWidget {
     if (size.width < 749) {
       return Scaffold(
           appBar: const CustomAppBar(title: ''),
-          drawer: MediaQuery.of(context).size.width <= 745
-              ? const CustomDrawer()
-              : null,
+          drawer: const CustomDrawer(),
+
           body: SingleChildScrollView(
             child: Padding(
               padding: const EdgeInsets.fromLTRB(25, 50, 25, 0),
@@ -25,25 +25,38 @@ class Yoga extends StatelessWidget {
                   Align(
                       alignment: Alignment.center,
                       child: Text(
-                        "Yoga",
-                        style: titleStyleMedium(context),
+                        "Taîso",
+                        style: titleStyleMedium(context).copyWith(fontSize:size.width /10 ),
                       )),
                   const SizedBox(
                     height: 35,
                   ),
-                  Image.asset("assets/images/yoga.png"),
+                  Image.asset("assets/images/taiso.png"),
+                  const SizedBox(
+                    height: 35,
+                  ),
+                  SizedBox(
+                    width: double.infinity, // Assure que le parent occupe tout l'espace disponible
+                    child: Align(
+                      alignment: Alignment.center,
+                      child: Text(
+                        "Preparation du corps en japonais",
+                        style: titleStyleSmall(context).copyWith(fontSize: size.width/10),
+                      ),
+                    ),
+                  ),
+
                   const SizedBox(
                     height: 35,
                   ),
                   Text(
-                    "Que ce soit du hatha yoga, du vinyasa yoga, du yoga nidra ou un yoga traditionnel thérapeutique directement inspiré de l'inde (Kaivalyadhama), chaque pratique vous invite à explorer un travail alliant mobilité, respiration et spiritualité. Ces technique vous guide sur le chemin de la connaissance de soi, dans une société ou l'on vous en demande toujours plus? Lors de mes séances de yoga, je vous propose de faire une pause, un véritable moment de reconnexion à vous-même..",
+                    "Méthode japonaise de renforcement musculaire de l'ensemble de votre corps de la t^te jusqu'au petit orteil. 15 minutes d'échauffement, 30 minutes de de renforcement musculaire sur les grand groupes, les jambes, abdos, fessiers, dos etc... suivi d'un temps calme : association d'étirement et de relaxation.",
                     style: textStyleText(context),
                   ),
-                  const SizedBox(
-                    height: 35,
-                  ),
+
+                  const SizedBox(height: 35,),
                   Text(
-                    "Les cours de Yoga ont lieu tout les lundi à 14h00 / vendredi à 19h00",
+                    "Les cours de Taïso ont lieu tout le mardi à 19h00 et le samedi à 10h00",
                     style: textStyleText(context),
                   ),
                   const SizedBox(
@@ -69,25 +82,36 @@ class Yoga extends StatelessWidget {
                   Align(
                       alignment: Alignment.center,
                       child: Text(
-                        "Coaching Individuel",
+                        "Taïso",
                         style: titleStyleMedium(context),
                       )),
                   const SizedBox(
                     height: 35,
                   ),
-                  Image.asset("assets/images/yoga.png"),
+                  Image.asset("assets/images/taiso.png"),
                   const SizedBox(
                     height: 35,
                   ),
+                  SizedBox(
+                    width: double.infinity, // Assure que le parent occupe tout l'espace disponible
+                    child: Align(
+                      alignment: Alignment.center,
+                      child: Text(
+                        "Preparation du corps en japonais",
+                        style: titleStyleSmall(context)),
+                      ),
+                    ),
+
                   Text(
-                    "Que ce soit du hatha yoga, du vinyasa yoga, du yoga nidra ou un yoga traditionnel thérapeutique directement inspiré de l'inde (Kaivalyadhama), chaque pratique vous invite à explorer un travail alliant mobilité, respiration et spiritualité. Ces technique vous guide sur le chemin de la connaissance de soi, dans une société ou l'on vous en demande toujours plus? Lors de mes séances de yoga, je vous propose de faire une pause, un véritable moment de reconnexion à vous-même..",
+                    "Méthode japonaise de renforcement musculaire de l'ensemble de votre corps de la t^te jusqu'au petit orteil. 15 minutes d'échauffement, 30 minutes de de renforcement musculaire sur les grand groupes, les jambes, abdos, fessiers, dos etc... suivi d'un temps calme : association d'étirement et de relaxation.",
                     style: textStyleText(context),
                   ),
                   const SizedBox(
                     height: 35,
                   ),
+
                   Text(
-                    "Les cours de Yoga ont lieu tout les lundi à 14h00 / vendredi à 19h00",
+                    "Les cours de Taïso ont lieu tout le mardi à 19h00 et le samedi à 10h00",
                     style: textStyleText(context),
                   ),
                   const SizedBox(
@@ -101,3 +125,4 @@ class Yoga extends StatelessWidget {
     }
   }
 }
+

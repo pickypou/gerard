@@ -68,24 +68,24 @@ class Stretching extends StatelessWidget {
                   Align(
                       alignment: Alignment.center,
                       child: Text(
-                        "Gym douce",
+                        "Stretching",
                         style: titleStyleMedium(context),
                       )),
                   const SizedBox(
                     height: 35,
                   ),
-                  Image.asset("assets/images/gim.png"),
+                  Image.asset("assets/images/stretching.jpg"),
                   const SizedBox(
                     height: 35,
                   ),
                   Text(
-                    "Vous souffrez d'une affection longue durée (ALD) et vous avez arrété toute activité phisique depuis un certain temps? Vous souhaitez reprendre en douceur? Redécouvrez votre mobilité, votre souplesse et votre force grace à des exercise adaptés, réalisés sur chaise ou au sol. Ces activités incluent l'utilisationde marteriel léger (poids, elastique, vélo, swiss ball, power plate) ou simplement le poids de votre corps. Offrez à votre corps une reprise progressive et bienveillante pour retrouver vitalité et bien-être.",
+                    "Que vous soyez sportif ou débutant, en recherche de relaxation ou d'amélioration de vos performances, le stretching s'adapte à vos besoins et vous offre un moment de bien-être essentiel dans votre quotidien. Prenez le temps d'étiré , de relacher et de renforcer votre corps pour retrouver équillibre et sénérité.",
                     style: textStyleText(context),
                   ),
                   const SizedBox(
                     height: 35,
                   ),
-                  Text("Le cours de Gym Douce a lieu tout les mercredi à 14h00", style: textStyleText(context),),
+                  Text("Le cours de Stretshing a lieu tout les mercredi à 19h00", style: textStyleText(context),),
                   const SizedBox(height: 55,),
                   const Footer()
                 ],
