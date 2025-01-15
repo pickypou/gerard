@@ -31,7 +31,8 @@ class Yoga extends StatelessWidget {
                   const SizedBox(
                     height: 35,
                   ),
-                  Image.asset("assets/images/yoga.png"),
+                  Image.asset("assets/images/yoga.png",
+                    fit: BoxFit.contain, width: size.width * 0.8,),
                   const SizedBox(
                     height: 35,
                   ),
@@ -69,13 +70,14 @@ class Yoga extends StatelessWidget {
                   Align(
                       alignment: Alignment.center,
                       child: Text(
-                        "Coaching Individuel",
+                        "Yoga",
                         style: titleStyleMedium(context),
                       )),
                   const SizedBox(
                     height: 35,
                   ),
-                  Image.asset("assets/images/yoga.png"),
+                  Image.asset("assets/images/yoga.png",
+                    fit: BoxFit.contain, width: size.width * 0.3,),
                   const SizedBox(
                     height: 35,
                   ),

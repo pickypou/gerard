@@ -74,7 +74,8 @@ class Stretching extends StatelessWidget {
                   const SizedBox(
                     height: 35,
                   ),
-                  Image.asset("assets/images/stretching.jpg"),
+                  Image.asset("assets/images/stretching.jpg",
+                    fit: BoxFit.contain, width: size.width * 0.3,),
                   const SizedBox(
                     height: 35,
                   ),

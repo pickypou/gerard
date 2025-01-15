@@ -89,7 +89,8 @@ class YogaParentsEnfants extends StatelessWidget {
                   const SizedBox(
                     height: 35,
                   ),
-                  Image.asset("assets/images/yoga_parent_enfant.jpeg"),
+                  Image.asset("assets/images/yoga_parent_enfant.jpeg",
+                    fit: BoxFit.contain, width: size.width * 0.3,),
                   const SizedBox(
                     height: 35,
                   ),

@@ -88,7 +88,8 @@ class Taiso extends StatelessWidget {
                   const SizedBox(
                     height: 35,
                   ),
-                  Image.asset("assets/images/taiso.png"),
+                  Image.asset("assets/images/taiso.png",
+                    fit: BoxFit.contain, width: size.width * 0.5,),
                   const SizedBox(
                     height: 35,
                   ),

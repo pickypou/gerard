@@ -70,7 +70,8 @@ class GymDouce extends StatelessWidget {
                   const SizedBox(
                     height: 35,
                   ),
-                  Image.asset("assets/images/gim.png"),
+                  Image.asset("assets/images/gim.png",
+                    fit: BoxFit.contain, width: size.width * 0.3,),
                   const SizedBox(
                     height: 35,
                   ),

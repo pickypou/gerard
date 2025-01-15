@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
               const SizedBox(
                 height: 35,
               ),
-              Image.asset("assets/images/gerard_velo.png"),
+              Image.asset("assets/images/gerard.jpg"),
               const SizedBox(
                 height: 25,
               ),
@@ -79,7 +79,7 @@ class HomePage extends StatelessWidget {
               height: 35,
             ),
             Image.asset("assets/images/gerard.jpg",
-            fit: BoxFit.contain, width: size.width * 0.2,),
+            fit: BoxFit.contain, width: size.width * 0.3,),
             const SizedBox(
               height: 25,
             ),
