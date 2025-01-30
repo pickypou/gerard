@@ -49,15 +49,15 @@ class YogaParentsEnfants extends StatelessWidget {
                     height: 35,
                   ),
                   Text(
-                    "Offrez-vous une pause précieuse en famille avec nos cours de yoga parent-enfant, spécialement conçus pour les enfants à partir de quatre ans . A travers des posture ludique, interactives et accessible, vous découvrirez une manière douce et joyeuse de renforcer votre lien familial.",
+                    "Offrez-vous une pause précieuse en famille avec nos cours de yoga parent-enfant, spécialement conçus pour les enfants à partir de quatre ans. A travers des postures ludiques, interactives et accessibles, vous découvrirez une manière douce et joyeuse de renforcer votre lien familial.",
                     style: textStyleText(context),
                   ),
-                  Text("Ces séance sont l'occasion idéale de favoriser l'épanouissement de votre enfant tout en partageant des instant de bien-être de sérénité. Ensemble, explorez un univers où rires, détente et complicité ce mêlent harmonieusement.",
+                  Text("Ces séances sont l'occasion idéale de favoriser l'épanouissement de votre enfant tout en partageant des instants de bien-être, de sérénité. Ensemble, explorez un univers où rires, détente et complicité se mêlent harmonieusement.",
                   style: textStyleText(context),),
-                  Text("Rejoignez-nous pour créer des souvenir inoubliable avec votre petit trésor !", style: textStyleText(context),),
+                  Text("Rejoignez-nous pour créer des souvenirs inoubliables avec votre petit trésor !", style: textStyleText(context),),
                   const SizedBox(height: 35,),
                   Text(
-                    "Les cours de Yoga parents/enfants ont lieu tout les mercredi à 09h30",
+                    "Les cours de Yoga parents/enfants ont lieu tout les mercredis à 09h30",
                     style: textStyleText(context),
                   ),
                   const SizedBox(
@@ -101,17 +101,17 @@ class YogaParentsEnfants extends StatelessWidget {
                     height: 35,
                   ),
                   Text(
-                    "Offrez-vous une pause précieuse en famille avec nos cours de yoga parent-enfant, spécialement conçus pour les enfants à partir de quatre ans . A travers des posture ludique, interactives et accessible, vous découvrirez une manière douce et joyeuse de renforcer votre lien familial.",
+                    "Offrez-vous une pause précieuse en famille avec nos cours de yoga parent-enfant, spécialement conçus pour les enfants à partir de quatre ans. A travers des postures ludiques, interactives et accessibles, vous découvrirez une manière douce et joyeuse de renforcer votre lien familial.",
                     style: textStyleText(context),
                   ),
-                  Text("Ces séance sont l'occasion idéale de favoriser l'épanouissement de votre enfant tout en partageant des instant de bien-être de sérénité. Ensemble, explorez un univers où rires, détente et complicité ce mêlent harmonieusement.",
+                  Text("Ces séances sont l'occasion idéale de favoriser l'épanouissement de votre enfant tout en partageant des instants de bien-être, de sérénité. Ensemble, explorez un univers où rires, détente et complicité se mêlent harmonieusement.",
                     style: textStyleText(context),),
                   Text("Rejoignez-nous pour créer des souvenir inoubliable avec votre petit trésor !", style: textStyleText(context),),
                   const SizedBox(
                     height: 35,
                   ),
                   Text(
-                    "Les cours de Yoga parents/enfants ont lieu tout les mercredi à 09h30",
+                    "Les cours de Yoga parents/enfants ont lieu tout les mercredis à 09h30",
                     style: textStyleText(context),
                   ),
                   const SizedBox(

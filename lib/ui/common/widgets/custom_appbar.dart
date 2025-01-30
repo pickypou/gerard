@@ -51,7 +51,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       {'label': 'Yoga', 'route': '/yoga'},
       {'label': 'Stretching', 'route': '/stretching'},
       {'label': 'Yoga parents/enfants', 'route': '/parentsEnfants'},
-      {'label': 'Taîso', 'route': '/taiso'},
+      {'label': 'Taïso', 'route': '/taiso'},
       {'label': 'Coaching individuel', 'route': '/coaching'},
       {'label': 'Tarifs/Horaires', 'route': '/tarifsHoraires'},
       {'label': 'Contact', 'route': '/contact'}

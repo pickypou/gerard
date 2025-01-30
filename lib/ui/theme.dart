@@ -106,7 +106,7 @@ TextStyle? textStyleInput(BuildContext context, String inputText) {
   return  GoogleFonts.montserrat().copyWith(
     fontSize: textFontSize,
     fontWeight: FontWeight.bold,
-    color: Theme.of(context).colorScheme.onSurface,
+    color: Theme.of(context).colorScheme.onPrimary,
     decoration: TextDecoration.none,
   );
 }

@@ -40,7 +40,7 @@ class Taiso extends StatelessWidget {
                     child: Align(
                       alignment: Alignment.center,
                       child: Text(
-                        "Preparation du corps en japonais",
+                        "Préparation du corps en japonais",
                         style: titleStyleSmall(context).copyWith(fontSize: size.width/10),
                       ),
                     ),
@@ -50,13 +50,13 @@ class Taiso extends StatelessWidget {
                     height: 35,
                   ),
                   Text(
-                    "Méthode japonaise de renforcement musculaire de l'ensemble de votre corps de la t^te jusqu'au petit orteil. 15 minutes d'échauffement, 30 minutes de de renforcement musculaire sur les grand groupes, les jambes, abdos, fessiers, dos etc... suivi d'un temps calme : association d'étirement et de relaxation.",
+                    "Méthode japonaise de renforcement musculaire de l'ensemble de votre corps de la trête jusqu'au petit orteil. 15 minutes d'échauffement, 30 minutes de de renforcement musculaire sur les grands groupes, les jambes, abdos, fessiers, dos etc... suivi d'un temps calme : association d'étirement et de relaxation.",
                     style: textStyleText(context),
                   ),
 
                   const SizedBox(height: 35,),
                   Text(
-                    "Les cours de Taïso ont lieu tout le mardi à 19h00 et le samedi à 10h00",
+                    "Les cours de Taïso ont lieu tout les mardis à 19h00 et le samedi à 10h00",
                     style: textStyleText(context),
                   ),
                   const SizedBox(
@@ -98,13 +98,13 @@ class Taiso extends StatelessWidget {
                     child: Align(
                       alignment: Alignment.center,
                       child: Text(
-                        "Preparation du corps en japonais",
+                        "Préparation du corps en japonais",
                         style: titleStyleSmall(context)),
                       ),
                     ),
 
                   Text(
-                    "Méthode japonaise de renforcement musculaire de l'ensemble de votre corps de la t^te jusqu'au petit orteil. 15 minutes d'échauffement, 30 minutes de de renforcement musculaire sur les grand groupes, les jambes, abdos, fessiers, dos etc... suivi d'un temps calme : association d'étirement et de relaxation.",
+                    "Méthode japonaise de renforcement musculaire de l'ensemble de votre corps de la tête jusqu'au petit orteil. 15 minutes d'échauffement, 30 minutes de de renforcement musculaire sur les grands groupes, les jambes, abdos, fessiers, dos etc... suivi d'un temps calme : association d'étirement et de relaxation.",
                     style: textStyleText(context),
                   ),
                   const SizedBox(
@@ -112,7 +112,7 @@ class Taiso extends StatelessWidget {
                   ),
 
                   Text(
-                    "Les cours de Taïso ont lieu tout le mardi à 19h00 et le samedi à 10h00",
+                    "Les cours de Taïso ont lieu tout les mardis à 19h00 et le samedi à 10h00",
                     style: textStyleText(context),
                   ),
                   const SizedBox(

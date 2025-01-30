@@ -36,17 +36,13 @@ class Stretching extends StatelessWidget {
                     height: 35,
                   ),
                   Text(
-                    "Retrouvez votre souplesse et votre bien-être grâce au stretching, une discipline douce et accessible à tous. En travailant sur les muscles profonds, le stretching combine des étirements progressifs et des contractions isométriques pour renforcer le corps tout en gagnant en amplitude de mouvement.",
-                    style: textStyleText(context),
-                  ),
-                  Text(
-                      "Que vous soyez sportif ou débutant, en recherche de relaxation ou d'amélioration de vos performances, le stretching s'adapte à vos besoins et vous offre un moment de bien-être essentiel dans votre quotidien. Prenez le temps d'étiré , de relacher et de renforcer votre corps pour retrouver équillibre et sénérité.",
+                    "Que vous soyez sportif ou débutant, en recherche de relaxation ou d'amélioration de vos performances, le stretching s'adapte à vos besoins et vous offre un moment de bien-être essentiel dans votre quotidien. Prenez le temps d'étirer, de relacher et de renforcer votre corps pour retrouver équillibre et sénérité.",
                     style: textStyleText(context),
                   ),
                   const SizedBox(
                     height: 35,
                   ),
-                  Text("Les cours de Yoga ont lieu tout les lundi à 14h00 / vendredi à 19h00", style: textStyleText(context),),
+                  Text("Le cours de Stretshing a lieu tout les mercredis à 19h00", style: textStyleText(context),),
                   const SizedBox(height: 55,),
                   const Footer()
                 ],
@@ -80,13 +76,13 @@ class Stretching extends StatelessWidget {
                     height: 35,
                   ),
                   Text(
-                    "Que vous soyez sportif ou débutant, en recherche de relaxation ou d'amélioration de vos performances, le stretching s'adapte à vos besoins et vous offre un moment de bien-être essentiel dans votre quotidien. Prenez le temps d'étiré , de relacher et de renforcer votre corps pour retrouver équillibre et sénérité.",
+                    "Que vous soyez sportif ou débutant, en recherche de relaxation ou d'amélioration de vos performances, le stretching s'adapte à vos besoins et vous offre un moment de bien-être essentiel dans votre quotidien. Prenez le temps d'étirer, de relacher et de renforcer votre corps pour retrouver équillibre et sénérité.",
                     style: textStyleText(context),
                   ),
                   const SizedBox(
                     height: 35,
                   ),
-                  Text("Le cours de Stretshing a lieu tout les mercredi à 19h00", style: textStyleText(context),),
+                  Text("Le cours de Stretshing a lieu tout les mercredis à 19h00", style: textStyleText(context),),
                   const SizedBox(height: 55,),
                   const Footer()
                 ],

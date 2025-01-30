@@ -133,7 +133,7 @@ class ContactCard extends StatelessWidget {
               text,
               style: textStyleText(context).copyWith(
                 fontSize: calculatedFontSize,
-                color: Theme.of(context).colorScheme.secondary,
+                color: Theme.of(context).colorScheme.onPrimary,
                 decoration: TextDecoration.underline, // Indique un lien
               ),
             ),
@@ -162,7 +162,7 @@ class ContactCard extends StatelessWidget {
           child: Text(
             website,
             style: textStyleText(context).copyWith(
-              color: Theme.of(context).colorScheme.secondary,
+              color: Theme.of(context).colorScheme.onPrimary,
               fontSize: calculatedFontSize,
               decoration: TextDecoration
                   .underline, // Pour montrer qu'il s'agit d'un lien

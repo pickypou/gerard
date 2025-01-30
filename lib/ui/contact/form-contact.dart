@@ -97,7 +97,7 @@ class FormContactState extends State<FormContact> {
                     ElevatedButton(
                       onPressed: _sendEmail,
                       style: ElevatedButton.styleFrom(
-                        backgroundColor:  theme.colorScheme.secondary, // Couleur de fond gris
+                        backgroundColor:  theme.colorScheme.onPrimary, // Couleur de fond gris
                         foregroundColor: theme.colorScheme.surface, // Couleur du texte
                         shape: RoundedRectangleBorder(
                           side: BorderSide(color: theme.colorScheme.secondary, width: 2), // Bordure rouge
@@ -132,6 +132,7 @@ class FormContactState extends State<FormContact> {
       maxLines: maxLines,
       decoration: InputDecoration(
         labelText: label,
+        labelStyle: TextStyle(color: theme.colorScheme.onPrimary),
         filled: true,
         fillColor: Colors.transparent,
         border: OutlineInputBorder(

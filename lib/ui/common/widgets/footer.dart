@@ -19,7 +19,7 @@ class Footer extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text("© 2025 Gerard DUCROCQ tous droits réservés", style: textStyleText(context)),
+              Text("© 2025 Gérard DUCROCQ tous droits réservés", style: textStyleText(context)),
 
             ],
           ),

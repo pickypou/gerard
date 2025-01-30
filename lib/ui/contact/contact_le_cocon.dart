@@ -25,7 +25,7 @@ class ContactLeCocon extends StatelessWidget {
                 style: textStyleText(context).copyWith(fontSize: 16),
               ),
               Text(
-                  'Gare la plus proche : Bauvin ( environ 900 M à pieds, 5/10 min de marche )',
+                  'Gare la plus proche : Bauvin ( environ 900 M à pied, 5/10 min de marche )',
                   style: textStyleText(context).copyWith(fontSize: 16)),
             ],
           )),
