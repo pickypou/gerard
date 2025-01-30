@@ -44,7 +44,7 @@ class Yoga extends StatelessWidget {
                     height: 35,
                   ),
                   Text(
-                    "Les cours de Yoga ont lieu tout les lundis à 14h00 / vendredis à 19h00",
+                    "Les cours de Yoga ont lieu tout les lundis à 14h00 à 15h30 / vendredis à 19h00 à 20h30",
                     style: textStyleText(context),
                   ),
                   const SizedBox(
@@ -89,7 +89,7 @@ class Yoga extends StatelessWidget {
                     height: 35,
                   ),
                   Text(
-                    "Les cours de Yoga ont lieu tout les lundis à 14h00 / vendredis à 19h00",
+                    "Les cours de Yoga ont lieu tous les lundis à 14h00 à 15h30 / vendredis à 19h00 à 20h30",
                     style: textStyleText(context),
                   ),
                   const SizedBox(

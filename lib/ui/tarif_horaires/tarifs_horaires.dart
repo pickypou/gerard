@@ -24,7 +24,7 @@ class TarifsHoraires extends StatelessWidget {
             children: [
               Text('Les horaires', style: titleStyleSmall(context),),
               Text('Yoga : lundi de 14h à 15h30 et le vendredi de 19h00 à 20h30.' ,style: textStyleText(context)),
-              Text('Yoga  parent/enfant:  mercredi de 9h30 à 10h30.' ,style: textStyleText(context)),
+              Text('Yoga  parents/enfants:  mercredi de 9h30 à 10h30.' ,style: textStyleText(context)),
               Text('Gym douce :  mercredi de 14h à 15h.' ,style: textStyleText(context)),
               Text('Stretching : mercredi de 19h à 20h.' ,style: textStyleText(context)),
               Text('Taïso : mardi de 19h à 20h30 et samedi de 10h à 11h30.' ,style: textStyleText(context),),
@@ -32,7 +32,7 @@ class TarifsHoraires extends StatelessWidget {
               Text('Bon à savoir : ' ,style: textStyleText(context),),
               Text('La saison débute le 15 août et se termine le 14 juillet.' ,style: textStyleText(context),),
               Text('Les séances ont lieu toute l\'année, même durant la période de vacances scolaires, sauf les jours fériés. Possibilité de changer de séance en cas d\'indisponibilité ponctuelle.' ,style: textStyleText(context)),
-              Text('1ère séance d\'essais gratuite.' ,style: textStyleText(context),),
+              Text('1ère séance d\'essai gratuite.' ,style: textStyleText(context),),
               const SizedBox(height: 25,),
               Text('Les Tarifs', style: titleStyleSmall(context),),
               Text('La séance 7€.' ,style: textStyleText(context),),

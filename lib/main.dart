@@ -4,12 +4,16 @@ import 'package:gerard/ui/theme.dart';
 import 'core/di/di.dart';
 import 'core/router/router_config.dart';
 
-void main() {
+void main()  {
+  WidgetsFlutterBinding.ensureInitialized();
+
 
   configureDependencies();
-  runApp(const MyApp());
-}
 
+  runApp(const MyApp());
+
+
+}
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 

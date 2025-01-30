@@ -36,13 +36,13 @@ class Stretching extends StatelessWidget {
                     height: 35,
                   ),
                   Text(
-                    "Que vous soyez sportif ou débutant, en recherche de relaxation ou d'amélioration de vos performances, le stretching s'adapte à vos besoins et vous offre un moment de bien-être essentiel dans votre quotidien. Prenez le temps d'étirer, de relacher et de renforcer votre corps pour retrouver équillibre et sénérité.",
+                    "Que vous soyez sportif ou débutant, en recherche de relaxation ou d'amélioration de vos performances, le stretching s'adapte à vos besoins et vous offre un moment de bien-être essentiel dans votre quotidien. Prenez le temps d'étirer, de relâcher et de renforcer votre corps pour retrouver équilibre et sérénité.",
                     style: textStyleText(context),
                   ),
                   const SizedBox(
                     height: 35,
                   ),
-                  Text("Le cours de Stretshing a lieu tout les mercredis à 19h00", style: textStyleText(context),),
+                  Text("Le cours de Stretching a lieu tout les mercredis à 19h00 à 20h00", style: textStyleText(context),),
                   const SizedBox(height: 55,),
                   const Footer()
                 ],
@@ -76,13 +76,13 @@ class Stretching extends StatelessWidget {
                     height: 35,
                   ),
                   Text(
-                    "Que vous soyez sportif ou débutant, en recherche de relaxation ou d'amélioration de vos performances, le stretching s'adapte à vos besoins et vous offre un moment de bien-être essentiel dans votre quotidien. Prenez le temps d'étirer, de relacher et de renforcer votre corps pour retrouver équillibre et sénérité.",
+                    "Que vous soyez sportif ou débutant, en recherche de relaxation ou d'amélioration de vos performances, le stretching s'adapte à vos besoins et vous offre un moment de bien-être essentiel dans votre quotidien. Prenez le temps d'étirer, de relâcher et de renforcer votre corps pour retrouver équilibre et sérénité.",
                     style: textStyleText(context),
                   ),
                   const SizedBox(
                     height: 35,
                   ),
-                  Text("Le cours de Stretshing a lieu tout les mercredis à 19h00", style: textStyleText(context),),
+                  Text("Le cours de Stretching a lieu tous les mercredis à 19h00 à 20h00", style: textStyleText(context),),
                   const SizedBox(height: 55,),
                   const Footer()
                 ],
