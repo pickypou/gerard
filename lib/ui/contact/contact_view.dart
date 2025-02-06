@@ -41,8 +41,7 @@ class ContactView extends StatelessWidget {
                               mainAxisSize: MainAxisSize.min,
                               crossAxisAlignment: CrossAxisAlignment.stretch,
                               children: [
-                                ContactBientEtre(),
-                                SizedBox(height: 10),
+
                                 ContactSportSante(),
                               ],
                             ),

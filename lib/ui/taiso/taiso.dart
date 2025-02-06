@@ -58,7 +58,7 @@ class Taiso extends StatelessWidget {
 
                   const SizedBox(height: 35,),
                   Text(
-                    "Les cours de Taïso ont lieu tous les mardis à 19h00 à 20h30 et les samedis à 10h00 à 11h30",
+                    "Les cours de Taïso ont lieu tous les mardis de 19h00 à 20h30 et les samedis de 10h00 à 11h30",
                     style: textStyleText(context),
                   ),
                   const SizedBox(
@@ -118,7 +118,7 @@ class Taiso extends StatelessWidget {
                   ),
 
                   Text(
-                    "Les cours de Taïso ont lieu tous les mardis à 19h00 à 20h30 et les samedis à 10h00 à 11h30",
+                    "Les cours de Taïso ont lieu tous les mardis de 19h00 à 20h30 et les samedis de 10h00 à 11h30",
                     style: textStyleText(context),
                   ),
                   const SizedBox(

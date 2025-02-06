@@ -42,7 +42,7 @@ class GymDouce extends StatelessWidget {
                   const SizedBox(
                     height: 35,
                   ),
-                  Text("Le cours de Gym Douce a lieu tout les mercredis à 14h00 à 15h00", style: textStyleText(context),),
+                  Text("Le cours de Gym Douce a lieu tout les mercredis de 14h00 à 15h00", style: textStyleText(context),),
                   const SizedBox(height: 55,),
                   const Footer()
                 ],
@@ -82,7 +82,7 @@ class GymDouce extends StatelessWidget {
                   const SizedBox(
                     height: 35,
                   ),
-                  Text("Le cours de Gym Douce a lieu tout les mercredis à 14h00 à 15h00", style: textStyleText(context),),
+                  Text("Le cours de Gym Douce a lieu tout les mercredis de 14h00 à 15h00", style: textStyleText(context),),
                   const SizedBox(height: 55,),
                   const Footer()
                 ],

@@ -57,7 +57,7 @@ class YogaParentsEnfants extends StatelessWidget {
                   Text("Rejoignez-nous pour créer des souvenirs inoubliables avec votre petit trésor !", style: textStyleText(context),),
                   const SizedBox(height: 35,),
                   Text(
-                    "Les cours de Yoga parents/enfants ont lieu tout les mercredis à 09h30 à 11h30",
+                    "Les cours de Yoga parents/enfants ont lieu tout les mercredis de 09h30 à 11h30",
                     style: textStyleText(context),
                   ),
                   const SizedBox(
@@ -111,7 +111,7 @@ class YogaParentsEnfants extends StatelessWidget {
                     height: 35,
                   ),
                   Text(
-                    "Les cours de Yoga parents/enfants ont lieu tout les mercredis à 09h30 à 11h00",
+                    "Les cours de Yoga parents/enfants ont lieu tout les mercredis de 09h30 à 11h00",
                     style: textStyleText(context),
                   ),
                   const SizedBox(
