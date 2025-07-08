@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:gerard/ui/common/widgets/footer.dart';
 import 'package:gerard/ui/theme.dart';
 
 import '../common/widgets/custom_appbar.dart';
-import 'contact_bien_etre.dart';
 import 'contact_le_cocon.dart';
 import 'contact_sport_sante.dart';
-import 'form-contact.dart';
+import 'form_contact.dart';
 
 class ContactView extends StatelessWidget {
   const ContactView({super.key});
@@ -71,6 +71,8 @@ class ContactView extends StatelessWidget {
                           FormContact(),
                           SizedBox(height: 10),
                           ContactLeCocon(),
+                          SizedBox(height: 50,),
+                         // Footer()
                         ],
                       );
 
@@ -79,6 +81,14 @@ class ContactView extends StatelessWidget {
                   },
                 ),
               ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  Footer()
+                ],
+              )
+
             ],
           ),
           )

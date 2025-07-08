@@ -20,7 +20,7 @@ import '../../ui/tarif_horaires/tarifs_horaires_module.dart' as _i597;
 import '../../ui/ui_module.dart' as _i573;
 import '../../ui/view_all/view_all_module.dart' as _i261;
 import '../../ui/yoga/yoga_module.dart' as _i45;
-import '../../ui/yoga_parents_enfants/yoga_parents-enfants-module.dart'
+import '../../ui/yoga_parents_enfants/yoga_parents_enfants_module.dart'
     as _i349;
 import '../router/router_config.dart' as _i718;
 

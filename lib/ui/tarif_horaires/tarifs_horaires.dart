@@ -9,7 +9,6 @@ class TarifsHoraires extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.sizeOf(context);
     return Scaffold(
         appBar: const CustomAppBar(title: ''),
         drawer: const CustomDrawer(),
