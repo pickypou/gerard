@@ -36,14 +36,19 @@ class GymDouce extends StatelessWidget {
                     height: 35,
                   ),
                   Text(
-                    "Vous souffrez d'une affection longue durée (ALD) et vous avez arrêté toutes activités physiques depuis un certain temps ? Vous souhaitez reprendre en douceur ? Re-découvrez votre mobilité, votre souplesse et votre force grace à des exercices adaptés, réalisés sur chaise ou au sol. Ces activités incluent l'utilisation de matériel léger (poids, elastique, vélo, swiss ball, power plate) ou simplement le poids de votre corps. Offrez à votre corps une reprise progressive et bienveillante pour retrouver vitalité et bien-être.",
+                    "Vous souffrez d'une affection longue durée (ALD) et vous avez arrêté toutes activités physiques depuis un certain temps ? Vous souhaitez reprendre en douceur ? Re-découvrez votre mobilité, votre souplesse et votre force grâce à des exercices adaptés, réalisés sur chaise ou au sol. Ces activités incluent l'utilisation de matériel léger (poids, élastique, vélo, swiss ball, power plate) ou simplement le poids de votre corps. Offrez à votre corps une reprise progressive et bienveillante pour retrouver vitalité et bien-être.",
                     style: textStyleText(context),
                   ),
                   const SizedBox(
                     height: 35,
                   ),
-                  Text("Le cours de Gym Douce a lieu tout les mercredis de 14h00 à 15h00", style: textStyleText(context),),
-                  const SizedBox(height: 55,),
+                  Text(
+                    "Le cours de Gym Douce a lieu tous les mercredis de 14h00 à 15h00",
+                    style: textStyleText(context),
+                  ),
+                  const SizedBox(
+                    height: 55,
+                  ),
                   const Footer()
                 ],
               ),
@@ -70,8 +75,11 @@ class GymDouce extends StatelessWidget {
                   const SizedBox(
                     height: 35,
                   ),
-                  Image.asset("assets/images/gim.png",
-                    fit: BoxFit.contain, width: size.width * 0.3,),
+                  Image.asset(
+                    "assets/images/gim.png",
+                    fit: BoxFit.contain,
+                    width: size.width * 0.3,
+                  ),
                   const SizedBox(
                     height: 35,
                   ),
@@ -82,8 +90,13 @@ class GymDouce extends StatelessWidget {
                   const SizedBox(
                     height: 35,
                   ),
-                  Text("Le cours de Gym Douce a lieu tout les mercredis de 14h00 à 15h00", style: textStyleText(context),),
-                  const SizedBox(height: 55,),
+                  Text(
+                    "Le cours de Gym Douce a lieu tous les mercredis de 14h00 à 15h00",
+                    style: textStyleText(context),
+                  ),
+                  const SizedBox(
+                    height: 55,
+                  ),
                   const Footer()
                 ],
               ),

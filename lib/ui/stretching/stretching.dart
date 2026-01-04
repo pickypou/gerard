@@ -42,8 +42,13 @@ class Stretching extends StatelessWidget {
                   const SizedBox(
                     height: 35,
                   ),
-                  Text("Le cours de Stretching a lieu tout les mercredis de 19h00 à 20h00", style: textStyleText(context),),
-                  const SizedBox(height: 55,),
+                  Text(
+                    "Le cours de Stretching a lieu tous les mercredis de 19h00 à 20h00",
+                    style: textStyleText(context),
+                  ),
+                  const SizedBox(
+                    height: 55,
+                  ),
                   const Footer()
                 ],
               ),
@@ -70,8 +75,11 @@ class Stretching extends StatelessWidget {
                   const SizedBox(
                     height: 35,
                   ),
-                  Image.asset("assets/images/stretching.jpg",
-                    fit: BoxFit.contain, width: size.width * 0.3,),
+                  Image.asset(
+                    "assets/images/stretching.jpg",
+                    fit: BoxFit.contain,
+                    width: size.width * 0.3,
+                  ),
                   const SizedBox(
                     height: 35,
                   ),
@@ -82,8 +90,13 @@ class Stretching extends StatelessWidget {
                   const SizedBox(
                     height: 35,
                   ),
-                  Text("Le cours de Stretching a lieu tous les mercredis de 19h00 à 20h00", style: textStyleText(context),),
-                  const SizedBox(height: 55,),
+                  Text(
+                    "Le cours de Stretching a lieu tous les mercredis de 19h00 à 20h00",
+                    style: textStyleText(context),
+                  ),
+                  const SizedBox(
+                    height: 55,
+                  ),
                   const Footer()
                 ],
               ),

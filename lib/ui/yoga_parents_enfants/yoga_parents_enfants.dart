@@ -14,7 +14,6 @@ class YogaParentsEnfants extends StatelessWidget {
       return Scaffold(
           appBar: const CustomAppBar(title: ''),
           drawer: const CustomDrawer(),
-
           body: SingleChildScrollView(
             child: Padding(
               padding: const EdgeInsets.fromLTRB(25, 50, 25, 0),
@@ -25,7 +24,8 @@ class YogaParentsEnfants extends StatelessWidget {
                       alignment: Alignment.center,
                       child: Text(
                         "Yoga Parents/enfants",
-                        style: titleStyleMedium(context).copyWith(fontSize:size.width /10 ),
+                        style: titleStyleMedium(context)
+                            .copyWith(fontSize: size.width / 10),
                       )),
                   const SizedBox(
                     height: 35,
@@ -35,29 +35,37 @@ class YogaParentsEnfants extends StatelessWidget {
                     height: 35,
                   ),
                   SizedBox(
-                    width: double.infinity, // Assure que le parent occupe tout l'espace disponible
+                    width: double
+                        .infinity, // Assure que le parent occupe tout l'espace disponible
                     child: Align(
                       alignment: Alignment.center,
                       child: Text(
-                        "Partager un moment unique et complice avec votre enfant !",
-                        style: titleStyleSmall(context).copyWith(fontSize: size.width/10),
+                        "Partagez un moment unique et complice avec votre enfant !",
+                        style: titleStyleSmall(context)
+                            .copyWith(fontSize: size.width / 10),
                       ),
                     ),
                   ),
-
                   const SizedBox(
                     height: 35,
                   ),
                   Text(
-                    "Offrez-vous une pause précieuse en famille avec nos cours de yoga parents-enfants, spécialement conçus pour les enfants à partir de 4 ans. A travers des postures ludiques, interactives et accessibles, vous découvrirez une manière douce et joyeuse de renforcer votre lien familial.",
+                    "Offrez-vous une pause précieuse en famille avec nos cours de yoga parents-enfants, spécialement conçus pour les enfants à partir de 4 ans. À travers des postures ludiques, interactives et accessibles, vous découvrirez une manière douce et joyeuse de renforcer votre lien familial.",
                     style: textStyleText(context),
                   ),
-                  Text("Ces séances sont l'occasion idéale de favoriser l'épanouissement de votre enfant tout en partageant des instants de bien-être, de sérénité. Ensemble, explorez un univers où rire, détente et complicité se melent harmonieusement.",
-                  style: textStyleText(context),),
-                  Text("Rejoignez-nous pour créer des souvenirs inoubliables avec votre petit trésor !", style: textStyleText(context),),
-                  const SizedBox(height: 35,),
                   Text(
-                    "Les cours de Yoga parents/enfants ont lieu tout les mercredis de 09h30 à 11h30",
+                    "Ces séances sont l'occasion idéale de favoriser l'épanouissement de votre enfant tout en partageant des instants de bien-être, de sérénité. Ensemble, explorez un univers où rire, détente et complicité se melent harmonieusement.",
+                    style: textStyleText(context),
+                  ),
+                  Text(
+                    "Rejoignez-nous pour créer des souvenirs inoubliables avec votre petit trésor !",
+                    style: textStyleText(context),
+                  ),
+                  const SizedBox(
+                    height: 35,
+                  ),
+                  Text(
+                    "Les cours de Yoga parents/enfants ont lieu tous les mercredis de 09h30 à 11h30",
                     style: textStyleText(context),
                   ),
                   const SizedBox(
@@ -89,24 +97,33 @@ class YogaParentsEnfants extends StatelessWidget {
                   const SizedBox(
                     height: 35,
                   ),
-                  Image.asset("assets/images/yoga_parent_enfant.jpeg",
-                    fit: BoxFit.contain, width: size.width * 0.3,),
+                  Image.asset(
+                    "assets/images/yoga_parent_enfant.jpeg",
+                    fit: BoxFit.contain,
+                    width: size.width * 0.3,
+                  ),
                   const SizedBox(
                     height: 35,
                   ),
-                  Text("Partager un moment unique et complice avec votre enfant !",
+                  Text(
+                    "Partager un moment unique et complice avec votre enfant !",
                     style: titleStyleSmall(context),
                   ),
                   const SizedBox(
                     height: 35,
                   ),
                   Text(
-                    "Offrez-vous une pause précieuse en famille avec nos cours de yoga parents-enfants, spécialement conçus pour les enfants à partir de 4 ans. A travers des postures ludiques, interactives et accessibles, vous découvrirez une manière douce et joyeuse de renforcer votre lien familial.",
+                    "Offrez-vous une pause précieuse en famille avec nos cours de yoga parents-enfants, spécialement conçus pour les enfants à partir de 4 ans. À travers des postures ludiques, interactives et accessibles, vous découvrirez une manière douce et joyeuse de renforcer votre lien familial.",
                     style: textStyleText(context),
                   ),
-                  Text("Ces séances sont l'occasion idéale de favoriser l'épanouissement de votre enfant tout en partageant des instants de bien-être, de sérénité. Ensemble, explorez un univers où rire, détente et complicité se melent harmonieusement.",
-                    style: textStyleText(context),),
-                  Text("Rejoignez-nous pour créer des souvenirs inoubliables avec votre petit trésor !", style: textStyleText(context),),
+                  Text(
+                    "Ces séances sont l'occasion idéale de favoriser l'épanouissement de votre enfant tout en partageant des instants de bien-être, de sérénité. Ensemble, explorez un univers où rire, détente et complicité se melent harmonieusement.",
+                    style: textStyleText(context),
+                  ),
+                  Text(
+                    "Rejoignez-nous pour créer des souvenirs inoubliables avec votre petit trésor !",
+                    style: textStyleText(context),
+                  ),
                   const SizedBox(
                     height: 35,
                   ),

@@ -31,20 +31,23 @@ class Yoga extends StatelessWidget {
                   const SizedBox(
                     height: 35,
                   ),
-                  Image.asset("assets/images/yoga.png",
-                    fit: BoxFit.contain, width: size.width * 0.8,),
+                  Image.asset(
+                    "assets/images/yoga.png",
+                    fit: BoxFit.contain,
+                    width: size.width * 0.8,
+                  ),
                   const SizedBox(
                     height: 35,
                   ),
                   Text(
-                    "Que ce soit du hatha yoga, du vinyasa yoga, du yoga nidra ou un yoga traditionnel thérapeutique directement inspiré de l'Inde (Kaivalyadhama), chaque pratique vous invite à explorer un travail alliant mobilité, respiration et spiritualité. Ces techniques vous guident sur le chemin de la connaissance de soi, dans une société ou l'on vous en demande toujours plus. Lors de mes séances de yoga, je vous propose de faire une pause, un véritable moment de reconnexion à vous-même.",
+                    "Que ce soit du hatha yoga, du vinyasa yoga, du yoga nidra ou un yoga traditionnel thérapeutique directement inspiré de l'Inde (Kaivalyadhama), chaque pratique vous invite à explorer un travail alliant mobilité, respiration et spiritualité. Ces techniques vous guident sur le chemin de la connaissance de soi, dans une société où l'on vous en demande toujours plus. Lors de mes séances de yoga, je vous propose de faire une pause, un véritable moment de reconnexion à vous-même.",
                     style: textStyleText(context),
                   ),
                   const SizedBox(
                     height: 35,
                   ),
                   Text(
-                    "Les cours de Yoga ont lieu tout les lundis de 14h00 à 15h30 / vendredis de 19h00 à 20h30",
+                    "Les cours de Yoga ont lieu tous les lundis de 14h00 à 15h30 / vendredis de 19h00 à 20h30",
                     style: textStyleText(context),
                   ),
                   const SizedBox(
@@ -76,8 +79,11 @@ class Yoga extends StatelessWidget {
                   const SizedBox(
                     height: 35,
                   ),
-                  Image.asset("assets/images/yoga.png",
-                    fit: BoxFit.contain, width: size.width * 0.3,),
+                  Image.asset(
+                    "assets/images/yoga.png",
+                    fit: BoxFit.contain,
+                    width: size.width * 0.3,
+                  ),
                   const SizedBox(
                     height: 35,
                   ),

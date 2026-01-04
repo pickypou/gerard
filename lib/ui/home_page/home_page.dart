@@ -13,95 +13,98 @@ class HomePage extends StatelessWidget {
     if (size.width < 749) {
       return Scaffold(
           appBar: const CustomAppBar(title: ''),
-    drawer: MediaQuery.of(context).size.width <= 750
-    ? const CustomDrawer()
-        : null,
-       body:  SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(20, 50, 25, 0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Image.asset("assets/images/logo_gerard.png",
-                  fit: BoxFit.contain, width: size.width * 0.9),
-              const SizedBox(
-                height: 35,
+          drawer: MediaQuery.of(context).size.width <= 750
+              ? const CustomDrawer()
+              : null,
+          body: SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(20, 50, 25, 0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset("assets/images/logo_gerard.png",
+                      fit: BoxFit.contain, width: size.width * 0.9),
+                  const SizedBox(
+                    height: 35,
+                  ),
+                  Text(
+                    'Qui suis-je',
+                    style: titleStyleLarge(context),
+                  ),
+                  const SizedBox(
+                    height: 35,
+                  ),
+                  Image.asset("assets/images/gerard.jpg"),
+                  const SizedBox(
+                    height: 25,
+                  ),
+                  Align(
+                      alignment: Alignment.topLeft,
+                      child: Text(
+                        "Gérard :",
+                        style: textStyleTextAccueil(context),
+                      )),
+                  Text(
+                    "Professeur de judo, ceinture noire 6e dan, titulaire d'un BPJPS, diplômé en yoga (D.U), coach sportif à domicile, et éducateur sport-santé certifié, je mets mes compétences à votre service pour concevoir un programme personnalisé. Que ce soit en présentiel ou à distance, je vous accompagne pour entretenir votre forme physique, améliorer votre mobilité et atteindre vos objectifs grâce à des activités Régulières, Adaptées, Sécurisées et Progressives (RASP- selon la recommandation de l'OMS).",
+                    style: textStyleText(context),
+                  ),
+                  const SizedBox(
+                    height: 55,
+                  ),
+                  const Footer()
+                ],
               ),
-              Text(
-                'Qui suis-je',
-                style: titleStyleLarge(context),
-              ),
-              const SizedBox(
-                height: 35,
-              ),
-              Image.asset("assets/images/gerard.jpg"),
-              const SizedBox(
-                height: 25,
-              ),
-              Align(
-                  alignment: Alignment.topLeft,
-                  child: Text(
-                    "Gérard :",
-                    style: textStyleTextAccueil(context),
-                  )),
-              Text(
-                "Professeur de judo, ceinture noire 6e dan, titulaire d'un BPJPS, diplômé en yoga (D.U), coach sportif à domicile, et éducateur sport-santé certifié, je mets mes compétences à votre service pour concevoir un programme personnalisé. Que ce soit en présentiel ou à distance, je vous accompagne pour entretenir votre forme physique, améliorer votre mobilité et atteindre vos objectifs grace à des activités Régulières , Adaptées, Sécurisées et Progressives (RASP- selon la recommandation de l'OMS).",
-                style: textStyleText(context),
-              ),
-              const SizedBox(height: 55,),
-              const Footer()
-            ],
-          ),
-        ),
-       )
-      );
+            ),
+          ));
     } else {
       return Scaffold(
         appBar: const CustomAppBar(title: ''),
-
-    body:
-    SingleChildScrollView(
-        child: Padding(
-        padding: const EdgeInsets.fromLTRB(25, 50, 25, 0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset("assets/images/logo_gerard.png",
-                fit: BoxFit.contain, width: size.width * 0.3),
-            const SizedBox(
-              height: 35,
+        body: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(25, 50, 25, 0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset("assets/images/logo_gerard.png",
+                    fit: BoxFit.contain, width: size.width * 0.3),
+                const SizedBox(
+                  height: 35,
+                ),
+                Text(
+                  'Qui suis-je',
+                  style: titleStyleLarge(context),
+                ),
+                const SizedBox(
+                  height: 35,
+                ),
+                Image.asset(
+                  "assets/images/gerard.jpg",
+                  fit: BoxFit.contain,
+                  width: size.width * 0.3,
+                ),
+                const SizedBox(
+                  height: 25,
+                ),
+                Align(
+                    alignment: Alignment.topLeft,
+                    child: Text(
+                      "Gérard :",
+                      style:
+                          textStyleTextAccueil(context).copyWith(fontSize: 22),
+                    )),
+                Text(
+                  "Professeur de judo, ceinture noire 6e dan, titulaire d'un BPJPS, diplômé en yoga (D.U), coach sportif à domicile, et éducateur sport-santé certifié, je mets mes compétences à votre service pour concevoir un programme personnalisé. Que ce soit en présentiel ou à distance, je vous accompagne pour entretenir votre forme physique, améliorer votre mobilité et atteindre vos objectifs grâce à des activités Régulières, Adaptées, Sécurisées et Progressives (RASP- selon la recommandation de l'OMS).",
+                  style: textStyleText(context),
+                ),
+                const SizedBox(
+                  height: 55,
+                ),
+                const Footer()
+              ],
             ),
-            Text(
-              'Qui suis-je',
-              style: titleStyleLarge(context),
-            ),
-            const SizedBox(
-              height: 35,
-            ),
-            Image.asset("assets/images/gerard.jpg",
-            fit: BoxFit.contain, width: size.width * 0.3,),
-            const SizedBox(
-              height: 25,
-            ),
-            Align(
-                alignment: Alignment.topLeft,
-                child: Text(
-                  "Gérard :",
-                  style: textStyleTextAccueil(context).copyWith(fontSize: 22),
-                )),
-            Text(
-              "Professeur de judo, ceinture noire 6e dan, titulaire d'un BPJPS, diplômé en yoga (D.U), coach sportif à domicile, et éducateur sport-santé certifié, je mets mes compétences à votre service pour concevoir un programme personnalisé. Que ce soit en présentiel ou à distance, je vous accompagne pour entretenir votre forme physique, améliorer votre mobilité et atteindre vos objectifs grace à des activités Régulières , Adaptées, Sécurisées et Progressives (RASP- selon la recommandation de l'OMS).",
-              style: textStyleText(context),
-            ),
-            const SizedBox(height: 55,),
-            const Footer()
-
-          ],
+          ),
         ),
-        ),
-    ),
       );
-
     }
   }
 }

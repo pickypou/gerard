@@ -6,7 +6,7 @@ import 'package:gerard/ui/stretching/stretching_module.dart';
 import 'package:gerard/ui/taiso/taiso_module.dart';
 import 'package:gerard/ui/tarif_horaires/tarifs_horaires_module.dart';
 import 'package:gerard/ui/yoga/yoga_module.dart';
-import 'package:gerard/ui/yoga_parents_enfants/yoga_parents_enfants_module.dart';
+//import 'package:gerard/ui/yoga_parents_enfants/yoga_parents_enfants_module.dart';
 import 'package:go_router/go_router.dart';
 import 'package:injectable/injectable.dart';
 import '../../core/di/di.dart';
@@ -21,7 +21,7 @@ class AppRouterConfig {
       ...getIt<GymDouceModule>().getRoutes(),
       ...getIt<YogaModule>().getRoutes(),
       ...getIt<StretchingModule>().getRoutes(),
-      ...getIt<YogaParentsEnfantsModule>().getRoutes(),
+      //...getIt<YogaParentsEnfantsModule>().getRoutes(),
       ...getIt<TaisoModule>().getRoutes(),
       ...getIt<CoachingIndividuelModule>().getRoutes(),
       ...getIt<TarifsHoraireModule>().getRoutes(),
