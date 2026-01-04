@@ -1,11 +1,11 @@
 {
-    "name": "gerard",
-    "short_name": "gerard",
+    "name": "Gérard Ducrocq Coach Sportif",
+    "short_name": "Gérard Coach",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#FAF6F1",
+    "theme_color": "#027c8e",
+    "description": "Application de Gérard Ducrocq, coach sportif à Provin.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
